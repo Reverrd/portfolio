@@ -20,13 +20,13 @@ export default function Header() {
       ]
   return (
     <>
-    <div id='headContainer' className=" bg-slate-950  h-12 ">
-    <div id="headWrapper" className='flex text-white justify-between items-center h-12 px-10'>
+    <div id='headContainer' className=" bg-slate-950  h-12 sticky top-0 z-20 ">
+    <div id="headWrapper" className='flex text-white justify-between items-center h-12 px-10  '>
     <div className='flex '>
       {
         socials.map((social)=>{
             return(
-            <div className='mr-5' key={social.id} href={social.url}>
+            <div className='mr-5 hover:cursor-pointer' key={social.id} href={social.url}>
                 {social.icon}
             </div>
         )}
@@ -35,7 +35,7 @@ export default function Header() {
       }
       
     </div>
-    <div className='right'>
+    <div className='right hover:cursor-pointer'>
       <span className='ml-5'>Projects</span>
       <span className='ml-5'>Contact Me</span>
       <span className='ml-5'>Resume</span>
