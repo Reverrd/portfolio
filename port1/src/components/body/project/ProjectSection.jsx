@@ -18,29 +18,36 @@ export default function ProjectSection() {
         },
         {
             id:3,
-            image: '',
-            title:'',
-            desc:'',
-            url:'',
+            image: './assets/vocalCentric.png',
+            title:'Vocal Centric',
+            desc:'This app is about connecting different choir groups together',
+            url:'http://landingpage-sage-pi.vercel.app', 
+        },
+        {
+            id:2,
+            image: './assets/vocalCentric.png',
+            title:'Vocal Centric',
+            desc:'This app is about connecting different choir groups together',
+            url:'http://landingpage-sage-pi.vercel.app', 
         }
     ]
   return (
     <>
-      <div className="bg-green-900 h-screen">
+      <div className="bg-green-900 h-fit">
         <div className="projectWrapper px-5">
-        <h1 className=" text-slate-100 text-2xl font-medium pb-10">
+        <h1 className=" text-slate-100 text-2xl font-medium pb-10 sm:text-2xl">
             Featured Projects
         </h1>
-        <div  className="flex gap-3 justify-evenly">
+        <div  className="flex gap-4 justify-center -4  px-16 flex-wrap items-center ">
             {
                 projects.map((project)=>{
                 return (
-                    <div className='bg-white  rounded-xl' key={project.id}>
+                    <div className='bg-white  rounded-xl flex flex-col  max-h-fit box-border sm:w-9/12 md:w-5/12 lg:w-4/12' key={project.id}>
                         
                         
-                        <img className='rounded-xl' src={project.image} alt="" />
-                        <div className='pb-2.5'>{project.title}</div>
-                        <div>{project.desc}</div>
+                        <img className='rounded-xl h-2/3' src={project.image} alt="" />
+                        <div className='pb-2.5 px-3 font-bold '>{project.title}</div>
+                        <div className='pb-4 px-3'>{project.desc}</div>
                         
                         
 
