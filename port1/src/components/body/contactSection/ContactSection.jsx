@@ -15,7 +15,7 @@ export default function ContactSection() {
     },
   })
   return (
-    <div id="contact" className="bg-indigo-800 h-auto text-white ">
+    <div id="contact" className="bg-indigo-800 h-auto text-white static top-10">
       <div id="contactWrapper" className="py-11 px-14">
       <h1 className="font-bold text-2xl text-white">Contact Me</h1>
       <div id="formWrapper" className=" flex  pt-9 justify-center px-28">
