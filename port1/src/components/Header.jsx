@@ -1,6 +1,14 @@
 
 import { GitHub, LinkedIn, Menu, Twitter } from '@mui/icons-material'
 export default function Header() {
+  const handleClick = (anchor)=>{
+    const id = `${anchor}`;
+    const element = document.getElementById(id);
+    element? element.scrollIntoView({
+      behavior:'smooth',
+      block:'start',
+    }): null;
+  }
     const socials = [
         {
           id:1,
@@ -36,8 +44,8 @@ export default function Header() {
       
     </div>
     <div className='right hover:cursor-pointer'>
-      <span className='ml-5 lg:inline md:inline sm:hidden xxs:hidden'>Projects</span>
-      <span className='ml-5 lg:inline md:inline sm:hidden xxs:hidden'>Contact Me</span>
+      <span onClick={()=>handleClick('project')} className='ml-5 lg:inline md:inline sm:hidden xxs:hidden'>Projects</span>
+      <span onClick={()=>handleClick('contact')} className='ml-5 lg:inline md:inline sm:hidden xxs:hidden'>Contact Me</span>
       <span className='ml-5 lg:inline md:inline sm:hidden xxs: hidden '>Resume</span>
       <span className=' ml-5 lg:hidden md:hidden'><Menu /></span>
     </div>

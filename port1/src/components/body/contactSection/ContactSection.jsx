@@ -6,7 +6,7 @@ export default function ContactSection() {
       name: '',
       email: '',
       message: '',
-      enquiry: 'nill',
+      enquiry: document.getElementById('enquiry'),
     },
     validate: Validate,
     onSubmit: values =>{
@@ -15,7 +15,7 @@ export default function ContactSection() {
     },
   })
   return (
-    <div className="bg-indigo-800 h-auto text-white ">
+    <div id="contact" className="bg-indigo-800 h-auto text-white ">
       <div id="contactWrapper" className="py-11 px-14">
       <h1 className="font-bold text-2xl text-white">Contact Me</h1>
       <div id="formWrapper" className=" flex  pt-9 justify-center px-28">
@@ -51,6 +51,7 @@ export default function ContactSection() {
           className="px-1 bg-transparent border rounded-md py-1 " 
           name="enquiry" 
           id="enquiry"
+          onChange={formik.handleChange}
           value={formik.values.enquiry}
           >
             <option className="text-black" value="freelance">Freelance project proposal</option>

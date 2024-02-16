@@ -34,7 +34,7 @@ export default function ProjectSection() {
     ]
   return (
     <>
-      <div className="bg-green-900 h-fit">
+      <div id='project' className="bg-green-900 h-fit">
         <div className="projectWrapper px-5 pb-5">
         <h1 className=" text-slate-100 text-2xl font-medium pb-10 sm:text-2xl">
             Featured Projects
