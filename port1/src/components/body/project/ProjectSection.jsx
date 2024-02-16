@@ -1,4 +1,5 @@
 
+import { ArrowForward } from '@mui/icons-material'
 import './project.scss'
 export default function ProjectSection() {
     const projects = [
@@ -34,7 +35,7 @@ export default function ProjectSection() {
   return (
     <>
       <div className="bg-green-900 h-fit">
-        <div className="projectWrapper px-5">
+        <div className="projectWrapper px-5 pb-5">
         <h1 className=" text-slate-100 text-2xl font-medium pb-10 sm:text-2xl">
             Featured Projects
         </h1>
@@ -48,6 +49,12 @@ export default function ProjectSection() {
                         <img className='rounded-xl h-2/3' src={project.image} alt="" />
                         <div className='pb-2.5 px-3 font-bold '>{project.title}</div>
                         <div className='pb-4 px-3'>{project.desc}</div>
+                        <div className='flex items-center px-3 pb-5 cursor-pointer'>
+                            <div className='font-medium'>
+                            See more
+                            </div> 
+                            <span><ArrowForward /></span>
+                        </div>
                         
                         
 
