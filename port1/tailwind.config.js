@@ -6,6 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius:{
+        'rounded-circle':'50%'
+      },
+      fontSize:{
+        'lg!': '2rem !important',
+        'xl!': '3.5rem !important',
+        'xxl!': '4rem !important'
+      },
       screens:{
         'xxs': '160px',
         'xs': '320px',
