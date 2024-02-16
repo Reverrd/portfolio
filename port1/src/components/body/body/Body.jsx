@@ -6,7 +6,6 @@ import ProjectSection from "../project/ProjectSection";
 export default function Body() {
   return (
     <>
-    
       <Hero />
       <ProjectSection />
       <ContactSection />
