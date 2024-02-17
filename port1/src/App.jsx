@@ -7,21 +7,21 @@ import ContactSection from './components/body/contactSection/ContactSection'
 import Header from './components/Header/Header'
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  // const [isScrolled, setIsScrolled] = useState(false)
 
-  useEffect(()=>{
-    const handleScroll = ()=>{
-    const contactScroll = document.getElementById('contactSection').getBoundingClientRect().top;
-    contactScroll<window.innerHeight ? setIsScrolled(true):
-    setIsScrolled(false);
-    }
-    window.addEventListener('scroll', handleScroll)
+  // useEffect(()=>{
+  //   const handleScroll = ()=>{
+  //   const contactScroll = document.getElementById('contactSection').getBoundingClientRect().top;
+  //   contactScroll<window.innerHeight ? setIsScrolled(true):
+  //   setIsScrolled(false);
+  //   }
+  //   window.addEventListener('scroll', handleScroll)
   
-    return ()=>{
-      window.removeEventListener('scroll', handleScroll);
-    }
+  //   return ()=>{
+  //     window.removeEventListener('scroll', handleScroll);
+  //   }
   
-  },[])
+  // },[])
  
   return (
     <>

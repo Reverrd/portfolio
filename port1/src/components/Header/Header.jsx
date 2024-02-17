@@ -1,10 +1,24 @@
 
 import { Close, GitHub, LinkedIn, Menu, Twitter } from '@mui/icons-material'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 export default function Header() {
   
   
   const [isClicked, setIsClicked]= useState(false)
+
+  // useEffect(()=>{
+  //   const handleClickOutside = (event)=>{
+  //     isClicked && !event.target.closest('.clickedMenu') ?
+  //     setIsClicked(false):null
+  //   }
+  
+  // document.addEventListener('click', handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener('click', handleClickOutside);
+  //   };
+  // }, [isClicked]);
+  
   const menuIcon = document.getElementById('menu')
  
     const menuClick = ()=>{
@@ -28,7 +42,7 @@ export default function Header() {
     
       isClicked && (
         <>
-        <div className=' absolute bg-gray-900 bg-opacity-50 w-screen h-screen z-30 right-0 top-0 '>
+        <div className='clickedMenu absolute bg-gray-900 bg-opacity-50 w-screen h-screen z-30 right-0 top-0 '>
         </div>
         <div className=' text-2xl  w-5/12 bg-white flex flex-col absolute top-12 right-0 text-black z-50'>
         <div
