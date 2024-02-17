@@ -1,12 +1,15 @@
+
 import Validate from "./Validate"
 import { useFormik } from "formik"
 export default function ContactSection() {
+
+
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
       message: '',
-      enquiry: document.getElementById('enquiry'),
+      enquiry: undefined,
     },
     validate: Validate,
     onSubmit: values =>{

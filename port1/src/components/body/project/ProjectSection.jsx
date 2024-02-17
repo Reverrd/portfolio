@@ -25,7 +25,7 @@ export default function ProjectSection() {
             url:'http://landingpage-sage-pi.vercel.app', 
         },
         {
-            id:2,
+            id:4,
             image: './assets/vocalCentric.png',
             title:'Vocal Centric',
             desc:'This app is about connecting different choir groups together',

@@ -14,6 +14,9 @@ export default {
         'xl!': '3.5rem !important',
         'xxl!': '4rem !important'
       },
+      height:{
+        'h-screen-2': '200vh'
+      },
       screens:{
         'xxs': '160px',
         'xs': '320px',

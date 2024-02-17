@@ -42,7 +42,7 @@ export default function Hero() {
     {isScrolled &&(
      <div
     
-     onClick={()=>handleClick('home')} className='rounded-full border-4 fixed top-1/3 right-0 mr-5 cursor-pointer '>
+     onClick={()=>handleClick('home')} className='rounded-full border-4 fixed top-1/3 right-0 mr-5 cursor-pointer mix-blend-luminosity '>
       <KeyboardDoubleArrowUp id='arrow up' className='text-white text-xl!'  />
      </div>)}
     </div>
